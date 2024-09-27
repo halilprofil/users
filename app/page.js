@@ -11,7 +11,7 @@ export default async function Home() {
    <>
     <div className="container">
       {users.map(x => 
-      <div className="user-item">
+      <div key={x.id} className="user-item">
          <İmage src={x.image} width={200} height={200} alt={x.firstName} priority={true}/>
          <span>İsim: {x.firstName} </span> 
          <span>Soyisim: {x.lastName}</span>
